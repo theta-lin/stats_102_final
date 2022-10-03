@@ -128,13 +128,13 @@ class MetalArchives:
 
         result = list()
         while index < num:
+            params['iDisplayStart'] = index
             index += num_display
 
             for attempt in range(0, 10):
                 time.sleep(3)
 
                 try:
-                    params['iDisplayStart'] = index
                     songs = self.session.get(url, params=params,
                                         headers={'User-Agent': get_random_user_agent()}).json()['aaData']
 
@@ -192,13 +192,13 @@ class MetalArchives:
 
         result = list()
         while index < num:
+            params['iDisplayStart'] = index
             index += num_display
 
             for attempt in range(0, 10):
                 time.sleep(3)
 
                 try:
-                    params['iDisplayStart'] = index
                     bands = self.session.get(url, params=params,
                                         headers={'User-Agent': get_random_user_agent()}).json()['aaData']
 
