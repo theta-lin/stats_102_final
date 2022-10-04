@@ -2,6 +2,10 @@
 
 Our final project for STATS 102, aiming at analyzing data from [Metal Archives](http://www.metal-archives.com/).
 
+## Data
+
+Data is stored separately on Duke Box. Please download the "stats\_102\_final\_data" folder, rename it as "data", and put it in the project root folder.
+
 ## Team members
 
 - Chi, Yutong
