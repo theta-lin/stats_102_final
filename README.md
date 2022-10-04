@@ -4,7 +4,7 @@ Our final project for STATS 102, aiming at analyzing data from [Metal Archives](
 
 ## Data
 
-Data is stored separately on Duke Box. Please download the "stats\_102\_final\_data" folder, rename it as "data", and put it in the project root folder.
+Data is stored separately on [Duke Box](https://duke.box.com/s/xdtvc5unf555bgarmzopb42028nppygb). Please download the "stats\_102\_final\_data" folder, rename it as "data", and put it in the project root folder.
 
 ## Team members
 
