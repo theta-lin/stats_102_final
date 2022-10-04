@@ -228,6 +228,7 @@ class MetalArchives:
             try:
                 data = self.session.get(url,
                                     headers={'User-Agent': get_random_user_agent()})
+                if data.text.find('Cloudflare') != -1: raise
 
             except:
                 print('Error, retrying...', attempt, '                    ', end='\r')
