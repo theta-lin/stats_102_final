@@ -1,5 +1,6 @@
 from metal_archives import MetalArchives
 import pandas as pd
+import csv
 
 ma = MetalArchives()
 
@@ -24,4 +25,4 @@ chunk_num = int(input('Number of chunks:'))
 chunk_id = int(input('ID of current chunk:'))
 index, values = get_lyrics_chunk(chunk_num, chunk_id)
 lyrics = pd.DataFrame(values, index=index)
-lyrics.to_csv('ma_lyrics_' + str(chunk_id) + '.csv')
+lyrics.to_csv('ma_lyrics_' + str(chunk_id) + '.csv', quoting=csv.QUOTE_NONNUMERIC)
